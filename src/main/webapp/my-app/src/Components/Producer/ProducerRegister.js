@@ -20,7 +20,7 @@ class ProducerRegister extends Component {
                         Email
                         </Form.Label>
                         <Col sm={10}>
-                        <Form.Control type="email" placeholder="Email" />
+                        <Form.Control type="email" placeholder="Password" />
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row} controlId="formHorizontalEmail">
