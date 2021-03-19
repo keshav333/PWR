@@ -1,0 +1,24 @@
+.formPosition{
+    margin-top:20%;
+    margin-bottom:20%;
+    padding:5%;
+}
+#smallStyle{
+    margin-left:5%;
+}
+#imgStyle{
+    height:100%;
+    width:100%;
+}
+.col{
+    padding: left 0;
+    padding-right:0;
+}
+.register{
+    margin-top:5%;
+    margin-left:15%;
+    margin-right:15%;
+}
+.form-control{
+    width:60%;
+}

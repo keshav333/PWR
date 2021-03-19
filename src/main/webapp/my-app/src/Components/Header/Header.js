@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Form, FormControl} from 'react-bootstrap';
 import Logo from '../../assets/images/pwr.png'
+import { Link } from 'react-router-dom';
 import './Header.css'
 class Header extends Component {
     render() {
@@ -12,10 +13,10 @@ class Header extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#producer">Producer</Nav.Link>
-                        <Nav.Link href="#wholesaler">Wholesaler</Nav.Link>
-                        <Nav.Link href="#retailer">Retailer</Nav.Link>
+                        <Nav.Link ><Link to ={"/"}>Home</Link></Nav.Link>
+                        <Nav.Link><Link to = {"/producer"}>Producer</Link></Nav.Link>
+                        <Nav.Link><Link to = {"/wholesaler"}>Wholesaler</Link></Nav.Link>
+                        <Nav.Link><Link to = {"/retailer"}>Retailer</Link></Nav.Link>
                         
                         </Nav>
                         <Form inline>

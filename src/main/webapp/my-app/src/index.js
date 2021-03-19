@@ -6,19 +6,18 @@ import Header from './Components/Header/Header'
 import MainPage from './Components/MainPage/MainPage'
 import Footer from './Components/Footer/Footer'
 import reportWebVitals from './reportWebVitals';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.css"; 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Header />
-    <MainPage />
-    <Footer />
-
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const routing = (
+  <Router>
+    <div>
+    <Route exact path="/" component={App} />
+      {/* <Route exact path="/recognition" component={RecognitionPage} />
+      <Route exact path="/register" component={DataTrainPage} />
+      <Route exact path="/admin" component={AdminPanel} />
+      <Route exact path="/project" component={App} /> */}
+    </div>
+  </Router>
+)
+ReactDOM.render(routing, document.getElementById('root'))
