@@ -30,7 +30,11 @@ public class Producer implements Serializable {
 
     @Column
     @NotNull
-    private Date productdob;
+    private String producerpassword;
+
+    @Column
+    @NotNull
+    private Date producerdob;
 
     @JsonIgnore
     @OneToMany(mappedBy = "producer", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
@@ -78,11 +82,11 @@ public class Producer implements Serializable {
     }
 
     public Date getProductdob() {
-        return productdob;
+        return producerdob;
     }
 
-    public void setProductdob(Date productdob) {
-        this.productdob = productdob;
+    public void setProductdob(Date producerdob) {
+        this.producerdob = producerdob;
     }
 
     public List<Business> getProducerBusiness() {
@@ -139,5 +143,38 @@ public class Producer implements Serializable {
 
     public void setProducerLevel(String producerLevel) {
         this.producerLevel = producerLevel;
+    }
+
+    public String getProducerpassword() {
+        return producerpassword;
+    }
+
+    public void setProducerpassword(String producerpassword) {
+        this.producerpassword = producerpassword;
+    }
+
+    public Date getProducerdob() {
+        return producerdob;
+    }
+
+    public void setProducerdob(Date producerdob) {
+        this.producerdob = producerdob;
+    }
+
+    @Override
+    public String toString() {
+        return "Producer{" +
+                "producerId=" + producerId +
+                ", producerName='" + producerName + '\'' +
+                ", producerpassword='" + producerpassword + '\'' +
+                ", producerdob=" + producerdob +
+                ", producerBusiness=" + producerBusiness +
+                ", producerDesc='" + producerDesc + '\'' +
+                ", producerCity='" + producerCity + '\'' +
+                ", producerState='" + producerState + '\'' +
+                ", producerPincode='" + producerPincode + '\'' +
+                ", producerVerified=" + producerVerified +
+                ", producerLevel='" + producerLevel + '\'' +
+                '}';
     }
 }

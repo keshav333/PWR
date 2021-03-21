@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0367d553-5e22-4988-bf65-896be1986670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spe/PWR/Controllers/ProducerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spe/PWR/Entities/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spe/PWR/Entities/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/my-app/src/Components/Producer/Producer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/my-app/src/Components/Producer/Producer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/my-app/src/Components/Producer/ProducerRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/my-app/src/Components/Producer/ProducerRegister.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,15 +98,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,6 +221,7 @@
       <workItem from="1614582574369" duration="2658000" />
       <workItem from="1614772592090" duration="4361000" />
       <workItem from="1615377582634" duration="526000" />
+      <workItem from="1616338484568" duration="1139000" />
     </task>
     <task id="LOCAL-00001" summary="product Repository">
       <created>1586042334649</created>
